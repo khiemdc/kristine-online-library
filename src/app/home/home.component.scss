@@ -92,51 +92,56 @@
 }
 
 .btn-resume-project{
-    background: #ffffff;
-    height: 50px !important;
-    width: 150px !important;
-    padding: 0 !important;
-    //@include add-background($primary-color);
-    @include add-border(2px, #ffffff, all);
-    border-radius: 5px;
-    margin-top: 25%;
-}
-
-.btn-resume-project-text{
-    color:$dark-color;
-    text-transform: capitalize;
-    font-weight: normal !important;
-    font-size: 14px !important;
-    font-family: Roboto;
-    line-height: 5px;
-    float: left;
-    margin-top: 25px !important;
-    margin-left: 0 !important;
-    text-align: left !important;
-}
-
-
-
-
-
-
-.btn-resume-project{
 background: #ffffff;
 height: 60px !important;
 width: 245px !important;
 padding: 0;
-margin-bottom: 20px !important;
 @include add-border(2px, $primary-color, all);
 //@include add-background($primary-color);
 border-radius: 50px;
 color: $primary-color;
+position:absolute;
+bottom:0%;
+right:15%;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .btn-resume-project{
+        background: #ffffff;
+        height: 60px !important;
+        width: 245px !important;
+        padding: 0;
+        @include add-border(2px, $primary-color, all);
+        //@include add-background($primary-color);
+        border-radius: 50px;
+        color: $primary-color;
+        position:relative;
+        margin-top: 75% !important;
+        }
+    }        
 
 .btn-resume-project:hover{
 background:darken($primary-color,10%) !important;
 @include add-border(2px, #ffffff, all);
 color: #ffffff !important;
 }
+
+.btn-resume-project-text{
+    color:$primary-color;
+    text-transform: none;
+    //font-weight: bold;
+    font-size: 20px !important;
+    font-family: Roboto;
+    line-height: 5px;
+    float: left;
+    margin-top: 25px;
+    }
+
+    .btn-resume-project-text:hover{
+        color: #ffffff !important;
+}
+
 
 .fa-7{
 padding: 0 !important;
@@ -146,17 +151,3 @@ color:$light-color;
 float: left !important;
 }
 
-.btn-resume-project-text{
-color:$primary-color;
-text-transform: capitalize;
-font-weight: bold;
-font-size: 20px !important;
-font-family: Roboto;
-line-height: 5px;
-float: left;
-margin-top: 25px;
-}
-.btn-resume-project-text:hover{
-    
-    color: #ffffff !important;
-    }
