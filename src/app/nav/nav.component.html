@@ -1,0 +1,41 @@
+
+<section>
+  <div class="row">
+    <div class="col-sm-12 col-md-7">
+      <h1 class="logo"><i class="fa fa-book"></i>Kristine Le <span class="header-title">Online Library</span></h1>
+    </div>
+  </div>
+
+
+  <mdb-navbar SideClass="navbar navbar-expand-sm navbar-dark bg-light-blue ie-nav" [containerInside]="false">
+   
+    <links>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active waves-light" mdbRippleRadius>
+                <a class="nav-link ml-4" [routerLink]="['/welcome']">Home</a>
+            </li>
+            <li class="nav-item waves-light" mdbRippleRadius>
+                <a class="nav-link ml-4" [routerLink]="['/books']">All Books</a>
+            </li>
+         <!--   <li class="nav-item waves-light" mdbRippleRadius>
+                <a class="nav-link ml-4">About</a>
+            </li>
+            <li class="nav-item waves-light" mdbRippleRadius>
+                <a class="nav-link ml-4">Contact</a>
+            </li> -->
+        </ul>
+        <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item waves-light" mdbRippleRadius>
+                <a class="nav-link"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="nav-item waves-light" mdbRippleRadius>
+                <a class="nav-link"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="nav-item waves-light" mdbRippleRadius>
+                <a class="nav-link"><i class="fa fa-instagram"></i></a>
+            </li>
+        </ul>
+    </links>
+</mdb-navbar>
+        
+</section>

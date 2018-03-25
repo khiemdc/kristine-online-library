@@ -1,0 +1,187 @@
+<!--Section: Features v.3-->
+<section class="section-showcase">
+<div class="section feature-box">
+
+    <!--Section heading-->
+    
+    <div class="text-title">
+    <h1 class="section-heading animated slideInUp">Welcome to my cyber space!</h1>
+    </div>
+    <!--Section description-->
+   <!-- <p class="section-description lead sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>-->
+
+    <!--Grid row-->
+    <div class="row features-small ml-3 pt-2">
+
+        <!--Grid column-->
+      <div class="col-lg-4 center-on-small-only">
+      <!-- <img src="https://mdbootstrap.com/img/Mockups/Transparent/Small/ipad-portfolio2.png" alt="" class="img-fluid z-depth-0">
+          /assets/videos/ting-video.mp4 -->
+          <div class="embed-responsive embed-responsive-4by3">
+              <iframe class="embed-responsive-item" src="/assets/videos/ting-video-2.mp4"></iframe>
+            </div>
+    
+      </div>                    
+        <!--Grid column-->
+        <div class="col-lg-8"></div>
+
+  </div>
+  <div class="row pb-5 mb-4">
+    <div class="col-md-6"></div>
+    <div class="col-md-6">
+  <div class="downloads text-center pb-5">
+      <a [routerLink]="['/books']" class="btn-resume-project btn btn-default animated slideInUp"><i class="fa fa-folder-open fa-7"></i><span class="btn-resume-project-text"><br>Read with me!</span></a>
+  </div>
+  </div>
+  </div>
+  </div>  
+  
+</section>
+<!--Section: Features v.3-->
+            
+
+
+<!-- light section -->
+<section class="section-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <form class="search">
+          <div>
+            <input type="search" placeholder="What's your favorite book?">
+            <search          
+            (notify)="onNotifyClicked($event)">
+          </search>
+          </div>
+        
+        </form>
+
+        
+        <p class="message">{{ searchMessage }}</p>
+      </div>
+
+      <div class="col-sm-12 col-md-6 text-center">
+        <favorite 
+          [thanks]
+          
+          (favoriteClicked)="onFavoriteClicked($event)">
+          </favorite>
+          <p class="message">{{ favoriteMessage }}</p> 
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 2nd section -->
+
+<section class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-8">
+        <!--Carousel Wrapper-->
+        <mdb-carousel [isControls]="true" class="carousel slide carousel-fade" [animation]="'fade'">
+          <!--First slide-->
+          <mdb-slide>
+              <div class="view hm-black-slight">
+                  <img class="d-block w-100" src="./assets/images/slide-1.jpg" alt="First slide">
+                  <div class="mask waves-light" mdbRippleRadius></div>
+              </div>
+              <div class="carousel-caption">
+                  <h3 class="h3-responsive"></h3>
+                  <p>Cherry Blossum in Washington DC, 2017.</p>
+              </div>
+          </mdb-slide>
+          <!--/First slide-->
+          <!--Second slide-->
+          <mdb-slide>
+              <div class="view hm-black-slight">
+                  <img class="d-block w-100" src="./assets/images/slide-2.jpg" alt="Second slide">
+                  <div class="mask waves-light" mdbRippleRadius></div>
+              </div>
+              <div class="carousel-caption">
+                  <h3 class="h3-responsive"></h3>
+                  <p>Cherry Blossum in Washington DC, 2017</p>
+              </div>
+          </mdb-slide>
+          <!--/Second slide-->
+          <!--Third slide-->
+          <mdb-slide>
+              <div class="view hm-black-strong">
+                  <img class="d-block w-100" src="./assets/images/slide-3.jpg" alt="Third slide">
+                  <div class="mask waves-light" mdbRippleRadius></div>
+              </div>
+              <div class="carousel-caption">
+                  <h3 class="h3-responsive">Dive into DC</h3>
+                  <p>Travel app using Google APIs, OpenWeather API, JSON, Javascript, jQuery.</p>
+              </div>
+          </mdb-slide>
+          <!--/Third slide-->
+        </mdb-carousel>
+        <!--/.Carousel Wrapper-->
+        <h2 class="page-header heading-primary-a"><strong>About me</strong></h2>
+        <p>As you are aware my name is Kristine and I am 5 and a half years old girl, who loves reading, writting, drawing, make a scrapbooks, adore cats. My favourite colours are all colours, especially violet and pink. I am not able to sleep by myself yet, so mum will help me with this for a while.</p>
+        
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <!--<h2 class="page-header"><span class="em-primary">What</span> I do</h2>-->
+        <ul class="list list-feature">
+            <li><i class="fa fa-check fa-4 fa-primary"></i> <span>I love play with friends</span></li>
+            <li><i class="fa fa-check fa-4 fa-primary"></i> <span>I listern to my teacher</span></li>
+            <li><i class="fa fa-check fa-4 fa-primary"></i> <span>Love to sing, play piano.</span></li>
+            <li><i class="fa fa-check fa-4 fa-primary"></i> <span>I like ballet, gymnastic. </span></li>
+            <li><i class="fa fa-check fa-4 fa-primary"></i> <span>And sleep with my parents.</span></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- quote -->
+<section class="section-primary-a pl-5 pr-1">
+  
+    <div class="row">
+      <div class="col-md-12">
+        <h2><strong>"The more that you READ, the more things you will KNOW.  The more that you LEARN, the more places you'll GO". -Dr. Seuss</strong></h2>
+      </div>
+    </div>
+  
+</section>
+
+<!-- Contact -->
+
+	<section class="section-main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2 class="page-heading">I would love to hear from you!</h2>
+					<form role="form">
+							<div class="form-group">
+								<label>Your name</label>
+								<input type="text" class="form-control" placeholder="Enter name">
+							  </div>	
+							  <div class="form-group">
+								<label>Your school</label>
+								<input type="text" class="form-control" placeholder="Enter phone">
+							  </div>	
+							  <div class="form-group">
+								<label>Email address</label>
+								<input type="email" class="form-control" placeholder="Enter email">
+							  </div>
+																				<div class="form-group">
+								<label>Tell me something</label>
+								<textarea class="form-control"></textarea>
+							  </div>
+							  <button type="submit" class="btn btn-primary">Send to me</button>
+						</form>
+				</div>
+        <div class="col-md-6">
+            <h2 class="page-heading ml-5">Where am I?</h2>
+            <div class="block block-primary-head no-pad">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2947.561497782143!2d-71.0621316!3d42.373183600000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370ed675fcd1b%3A0x5309f0ed69db33f1!2s9500+Little River+Tpke%2C+Fairfax%2C+VA+02129!5e0!3m2!1sen!2sus!4v1411337388236" width="500" height="400" frameborder="0" style="border:0"></iframe>
+            </div>       
+        </div>
+			</div>
+    </div>
+	</section>
+  

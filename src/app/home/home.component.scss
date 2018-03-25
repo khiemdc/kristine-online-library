@@ -1,0 +1,161 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+
+.section-showcase {
+    height:$showcase-height;
+    background: url(/assets/images/tingting-2.jpg) no-repeat bottom center;
+    background-size: cover;
+    //opacity: 0.8;
+    margin-top: -56px;
+}
+
+.showcase-content{
+    padding: 50px 0px 30px 0px;
+}
+
+.section-light{
+    background:$light-color;
+    color: #666666; 
+    padding: 50px 0 30px 0;
+}
+
+/* Headings */
+
+.heading-primary{
+    color: $primary-color;
+}
+
+/* .heading-primary-a{
+    @extend .heading-primary;
+    @include add-border(2px, $primary-color, bottom);
+}*/
+
+
+
+.text-title{
+    vertical-align: middle;
+}
+
+.text-title h1{
+    margin-top: 5%;
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 0em;
+    font-weight: 700;
+    color: $primary-color;
+    //color:  #FF9721;
+    text-shadow: 3px 2px 2px #000000;
+}
+
+.sub-title{
+    color: #ffffff;
+    margin-left: 40px;
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+/* Search box */
+.search{
+    width: 100%;
+    
+
+    h3{
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    input[type=search] {
+        height: 40px;
+        width: 70%;
+        border: 2px solid $primary-color;
+        font-size: 24px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
+
+    button{
+        border:0;
+        background: none;
+        padding:0;
+        vertical-align: top;
+        margin-left:-5px;
+    }
+}
+
+.message{
+    font-size: 24px;
+    color: $secondary-color;
+}
+
+.video-container{
+    width: 100%;
+}
+
+.btn-resume-project{
+    background: #ffffff;
+    height: 50px !important;
+    width: 150px !important;
+    padding: 0 !important;
+    //@include add-background($primary-color);
+    @include add-border(2px, #ffffff, all);
+    border-radius: 5px;
+}
+
+.btn-resume-project-text{
+    color:$dark-color;
+    text-transform: capitalize;
+    font-weight: normal !important;
+    font-size: 14px !important;
+    font-family: Roboto;
+    line-height: 5px;
+    float: left;
+    margin-top: 15 !important;
+    margin-left: 0 !important;
+    text-align: left !important;
+}
+
+
+
+
+
+
+.btn-resume-project{
+background: #ffffff;
+height: 60px !important;
+width: 245px !important;
+padding: 0;
+margin-bottom: 20px !important;
+@include add-border(2px, $primary-color, all);
+//@include add-background($primary-color);
+border-radius: 50px;
+color: $primary-color;
+}
+
+.btn-resume-project:hover{
+background:darken($primary-color,10%) !important;
+@include add-border(2px, #ffffff, all);
+color: #ffffff !important;
+}
+
+.fa-7{
+padding: 0 !important;
+margin: 5px 5px 0 25px !important;
+font-size:40px;
+color:$light-color;
+float: left !important;
+}
+
+.btn-resume-project-text{
+color:$primary-color;
+text-transform: capitalize;
+font-weight: bold;
+font-size: 20px !important;
+font-family: Roboto;
+line-height: 5px;
+float: left;
+margin-top: 25px;
+}
+.btn-resume-project-text:hover{
+    
+    color: #ffffff !important;
+    }

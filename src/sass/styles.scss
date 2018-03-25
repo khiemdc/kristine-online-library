@@ -1,0 +1,401 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: 1.7em;
+    color: $base-font-color;
+}
+
+/* Normalize */
+h1,h2,h3,h4,h5{
+    margin-top:0;
+}
+.page-header{
+    margin-top:30px;
+}
+.no-pad-top{
+    padding-top:0 !important;
+}
+
+.no-pad-bottom{
+    padding-bottom:0 !important;
+}
+
+.extra-pad{
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.top-inner{
+    padding:90px 0 30px 0;
+}
+
+h1{
+    text-align: center;
+    color:$primary-color;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .showcase-content{
+        padding: 0 !important;
+        text-align: center;
+    }
+    .page-header{
+        font-size: 20px;
+    }
+    .leed {
+        padding: 0;
+        text-align: center;
+        color: $light-color;
+    }
+
+    h1{
+        font-size: 16px !important;
+        text-align: center;
+        font-weight: bold;
+        color:$primary-color;
+        margin-top: 10%;
+        margin-bottom: 3%;
+    }
+
+    h2{
+        font-size: 18px !important;
+        text-align: center;
+    }
+
+
+    #subTitle {
+        font-size: 2em !important;
+        color: $primary-color;
+        text-align: center;
+        /*font-family: 'Roboto', sans-serif;*/
+        font-weight: 400;
+        margin-top: 15% !important;
+        margin-bottom: 5% !important;
+    }
+
+    .img-sm{width:75px !important;}
+
+}
+
+
+/* Image Sizes */
+.img-xsm{width:100px;}
+.img-sm{width:125px;}
+.img-lg{width:400px;}
+.img-xlg{width:700px;}
+
+.clearfix{
+    clear:both;
+}
+
+/* base format */
+a{
+    color: $primary-color;
+}
+ul, li {
+    list-style: none;
+}
+
+input, textarea, button {
+    @include border-radius(0px);
+}
+
+/* Sections */
+
+section{
+    padding: 30px 0;
+}
+
+.section-primary{
+    @include add-background($primary-color);
+}
+
+.section-primary-a{
+    @extend .section-primary;
+    @include add-border(4px, $secondary-color, top);
+}
+
+.section-primary-b{
+    @extend .section-primary;
+    @include add-border(4px, $secondary-color, bottom);
+}
+
+.section-secondary{
+    @include add-background($secondary-color);
+}
+.section-light{
+    @include add-background($light-color);
+}
+.section-dark{
+    @include add-background($dark-color);
+}
+
+/* Blocks */
+
+.block{
+    padding: 15px;
+    margin-bottom: 15px;
+    h3{
+        margin-top: 0px;
+        padding-top: 0;
+    }
+}
+
+.block-primary{
+    @extend .block;
+    @include add-background($primary-color);
+}
+.block-secondary{
+    @extend .block;
+    @include add-background($secondary-color);
+}
+.block-light{
+    @extend .block;
+    @include add-background($light-color);
+}
+.block-dark{
+    @extend .block;
+    @include add-background($dark-color);
+}
+
+.block-center{
+    text-align:center !important;
+}
+
+.block-image img{
+    width:100%;
+}
+
+.block-border{
+    @include add-border(1px, #cccccc, all);
+}
+
+/* Headings */
+
+.heading-primary{
+    color:$primary-color;
+}
+
+.heading-primary-a{
+    @extend .heading-primary;
+    @include add-border(2px, $primary-color, bottom);
+}
+
+.heading-secondary{
+    color:$secondary-color;
+}
+
+.heading-secondary-a{
+    @extend .heading-secondary;
+    @include add-border(2px, $secondary-color, bottom);
+}
+
+.heading-light{
+    color:$light-color;
+}
+
+.heading-light-a{
+    @extend .heading-light;
+    @include add-border(2px, $light-color, bottom);
+}
+
+.heading-dark{
+    color:$dark-color;
+}
+
+.heading-dark-a{
+    @extend .heading-dark;
+    @include add-border(2px, $dark-color, bottom);
+}
+
+
+/* Buttons */
+
+.btn-primary{
+    @include add-background($primary-color);
+    @include add-border(2px, #ffffff, all);
+}
+
+.btn-primary:hover{
+    background:darken($primary-color,10%);
+    @include add-border(2px, #ffffff, all);
+}
+
+img.device{
+    width:100%;
+}
+
+img.device-small{
+    width:100%;
+    //margin-bottom:-30px;
+}
+
+
+/* Lists */
+
+.list{
+    margin-bottom:30px;
+}
+
+.list-feature{
+    @extend .list;
+    margin:0;
+    padding:0;
+    width:80%;
+    
+    li{
+        line-height:3.6em;
+        @include add-border(1px, #cccccc, bottom);
+        overflow:auto;
+    }
+    
+    li:last-child{
+        border:0;
+    }
+    
+    span{
+        vertical-align:top;
+        padding-top:9px;
+        font-size:120%;
+    }
+    
+    i{
+        margin-top:-9px;
+        margin-right:5px;
+    }
+}
+
+.list-comments {
+    margin:0;
+    padding:0;
+}
+
+.list-comments li{
+    padding:10px 0 5px 0;
+    @include add-border(1px, #cccccc, bottom);
+    overflow:auto !important;
+}
+
+.list-comments li:last-child{
+    border:0;
+}
+
+.list-comments img{
+    width:100px;
+    width:100% !important;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .list{
+        margin-bottom:0px;
+    }
+    
+    .list-feature{
+        margin:0;
+        padding:0;
+        width:80%;
+    }    
+    
+    .list-feature span{
+            vertical-align:top;
+            padding-top:5px;
+            font-size:100% !important;
+    }
+}
+/* Icons */
+
+.fa-2{
+    font-size:18px;
+}
+.fa-3{
+    font-size:24px;
+}
+.fa-4{
+    font-size:27px;
+}
+.fa-5{
+    font-size:35px;
+}
+.fa-6{
+    font-size:40px;
+}
+
+.fa-primary{
+    color:$primary-color;
+}
+
+.fa-border{
+    @include add-border(1px, $primary-color, all);
+    @include border-radius(5px);
+    padding:13px 15px;
+    width:70px;
+    margin-bottom:10px;
+}
+
+
+/* Headings */
+
+.heading-primary{
+    color:$primary-color;
+}
+
+.heading-primary-a{
+    @extend .heading-primary;
+    @include add-border(2px, $primary-color, bottom);
+}
+
+.heading-secondary{
+    color:$secondary-color;
+}
+
+.heading-secondary-a{
+    @extend .heading-secondary;
+    @include add-border(2px, $secondary-color, bottom);
+}
+
+.heading-light{
+    color:$light-color;
+}
+
+.heading-light-a{
+    @extend .heading-light;
+    @include add-border(2px, $light-color, bottom);
+}
+
+.heading-dark{
+    color:$dark-color;
+}
+
+.heading-dark-a{
+    @extend .heading-dark;
+    @include add-border(2px, $dark-color, bottom);
+}
+
+/* Emphasis Text */
+
+.em-primary{
+    color:$primary-color;
+}
+
+.em-secondary{
+    color:$secondary-color;
+}
+
+.em-dark{
+    color:$dark-color;
+}
+
+.em-light{
+    color:$light-color;
+}
+
+.faveSelected{
+    color: red;
+}
+
+/* Sections */
