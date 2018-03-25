@@ -22,7 +22,7 @@ import { BookService } from './book.service';
 
 import { FormsModule } from '@angular/forms';
 
- import { TruncatePipe } from './shared/pipes/truncate.pipe';
+// import { TruncatePipe } from './shared/pipes/truncate.pipe';
 
 @NgModule({
   declarations: [
