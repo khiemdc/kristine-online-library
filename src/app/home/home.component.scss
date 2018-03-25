@@ -82,6 +82,30 @@
     }
 }
 
+
+@media only screen and (max-width: 768px) {
+    /* Search box */
+
+.search{
+    width: 100%;
+    
+    h3{
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    input[type=search] {
+        height: 40px;
+        width: 70%;
+        border: 2px solid $primary-color;
+        font-size: 18px;
+        padding-left: 10px;
+        padding-bottom: 0px;
+    }
+}
+}
+
+
 .message{
     font-size: 24px;
     color: $secondary-color;
@@ -119,7 +143,7 @@ right:15%;
         position:relative;
         margin-top: 75% !important;
         }
-    }        
+}        
 
 .btn-resume-project:hover{
 background:darken($primary-color,10%) !important;
