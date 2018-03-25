@@ -3,7 +3,7 @@
 
 .section-showcase {
     height:$showcase-height;
-    background: url(/assets/images/tingting-2.jpg) no-repeat bottom center;
+    background: url(/assets/img/tingting-2.jpg) no-repeat bottom center;
     background-size: cover;
     //opacity: 0.8;
     margin-top: -56px;
@@ -99,6 +99,7 @@
     //@include add-background($primary-color);
     @include add-border(2px, #ffffff, all);
     border-radius: 5px;
+    margin-top: 25%;
 }
 
 .btn-resume-project-text{
